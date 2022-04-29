@@ -14,7 +14,7 @@ import sys
 # The function is expected to return an INTEGER.
 # The function accepts 2D_INTEGER_ARRAY arr as parameter.
 #
-
+#------------------------------------------
 def diagonalDifference(arr):
     # Write your code here
     ss=0
@@ -28,10 +28,9 @@ def diagonalDifference(arr):
         temp=arr[i][-1-i]
         tt=tt+temp
         i+=1
-        
     pp=ss-tt
     return abs(pp)
-            
+#--------------------------------------------            
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
